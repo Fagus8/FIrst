@@ -1,0 +1,261 @@
+.bk-image {
+  background-image: linear-gradient(
+      100deg,
+      rgba(128, 80, 250, 0.801),
+      rgba(128, 80, 250, 0.801)
+    ),
+    url("https://www.surfertoday.com/images/stories/surfinglevel.jpg");
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+.f-h1 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 70px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.post-right {
+  border: 1px solid rgb(240, 239, 239);
+  height: 115px;
+
+  margin: 0;
+  padding: 0;
+  height: 150px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 287px;
+}
+
+.main {
+  display: flex;
+flex-wrap: wrap;
+  margin-top: 100px;
+height: 100%;
+ gap: 20px;
+
+  
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.card:hover .hov {
+  color: #8050fa;
+}
+.container-fluid {
+  background-color: #8050fa;
+  justify-content: end;
+  z-index: 1;
+  padding: 0;
+}
+
+.right {
+  width: 49%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  
+  
+}
+.left {
+  width: 49%;
+ display: flex;
+ justify-content: end;
+ flex-direction: column;
+ align-items: end;
+  
+}
+
+.container-fluid {
+  position: fixed;
+  z-index: 10;
+}
+.marvel p {
+  font-size: 10px;
+}
+.img {
+  width: 50px;
+  height: 50px;
+}
+ul li {
+  display: flex;
+  gap: 5px;
+}
+ul p {
+  margin: 0;
+  padding: 0;
+}
+.marvel {
+  background-color: white;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin-top: -235px;
+  height: 70px;
+  margin-left: -50px;
+  z-index: 0;
+}
+.marvel input {
+  border: none;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.im-1 {
+  background-image: url(https://preview.colorlib.com/theme/ruft/img/posts/p1.jpg);
+  background-size: cover;
+  max-width: 100%;
+  height: 300px;
+}
+
+.btn-1 {
+  border-radius: 10px;
+  border: 1px solid rgb(182, 180, 180);
+}
+.bottom {
+  margin-bottom: 200px;
+}
+.pos-1:hover  button {
+    background-color: #8050fa;
+    color: white;
+}
+.pos-1:hover h5 {
+    color: #8050fa;
+}
+.pos-1:hover .card-img-top {
+    -webkit-transform: scale(1.2);
+ transform: scale(1.2);
+  transition: transform 0.3s linear;
+}
+.hid{
+    position: relative;
+    overflow: hidden;
+}
+.card-img-top {
+   overflow: auto; 
+}
+.bt-size {
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-right: 1px;
+    background-color: rgba(240, 240, 240, 0.767);
+    
+}
+.fa {
+    
+   color: white;
+    align-items: center;
+    
+}
+.col {
+    background-color: #8050fa;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.post-right {
+    width: 350px;
+   
+    border: 1px solid rgb(202, 201, 201);
+}
+.pos-2:hover button  {
+    color: white;
+    background-color: #8050fa;
+}
+.pos-2:hover .card-img-top {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+     transition: transform 0.3s linear;
+}
+.pos-2:hover h5 {
+    color: #8050fa;
+} 
+.pos-3:hover button {
+    background-color: #8050fa;
+    color: white;
+}
+.pos-3:hover h5 {
+    color: #8050fa;
+}
+.pos-3:hover .card-img-top {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+     transition: transform 0.3s linear;
+}
+.pos-4:hover button {
+background-color: #8050fa;
+color: white;
+}
+.pos-4:hover h5 {
+color: #8050fa;
+}
+.pos-4:hover .card-img-top {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+     transition: transform 0.3s linear;
+}
+.pos-5:hover button {
+    background-color: #8050fa;
+    color: white;
+    }
+    .pos-5:hover h5 {
+    color: #8050fa;
+    }
+    .pos-5:hover .card-img-top {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+         transition: transform 0.3s linear;
+    }
+    .coment {
+        margin-top: -100px;
+        z-index: 0;
+        background-color: white;
+        width: 90%;
+    }
+    .img-1 {
+        width: 50px;
+        height: 50px;
+    }
+@media screen and (max-width: 1300px) {
+  .marvel {
+    margin-top: 0;
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .post-right {
+   max-width: 100%;
+    border: 1px solid rgb(202, 201, 201);
+}
+}
+
+  
+  
+  
