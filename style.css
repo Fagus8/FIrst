@@ -189,7 +189,8 @@ ul {
 .post-right {
   width: 400px;
 
-  border: 1px solid rgb(202, 201, 201);
+  border: 1px solid rgb(223, 220, 220);
+  border-radius: 4px;
 }
 .pos-2:hover button,
 .pos-3:hover button,
@@ -294,10 +295,27 @@ hr {
   display: none;
 }
 @media screen and (max-width: 1300px) {
+  .left {
+    width: 95%;
+  }
+  .right {
+    display: flex;
+    width: 95%;
+    border: none;
+  }
+  .card {
+    width: 97%;
+  }
+  .post-right {
+    width: 97%;
+    padding: 48px;
+    box-sizing: border-box;
+  }
   .marvel {
     margin-top: 0;
     margin-left: 0;
     margin-top: 25px;
+    width: 100%;
   }
   .post-right {
     max-width: 100%;
@@ -315,11 +333,7 @@ hr {
   .responsive {
     display: flex;
   }
-  .right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .main {
     width: 100%;
     justify-content: center;
@@ -328,6 +342,11 @@ hr {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    width: 97%;
+  }
+  .categories {
+    width: 97%;
+    margin-bottom: 20px;
   }
   .pp-1,
   .pp-2,
@@ -337,5 +356,8 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+  .bottom {
+    margin-bottom: 100px;
   }
 }
