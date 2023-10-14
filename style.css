@@ -5,14 +5,14 @@
       rgba(128, 80, 250, 0.801)
     ),
     url("https://www.surfertoday.com/images/stories/surfinglevel.jpg");
-  position: relative;
+
   display: flex;
   flex-direction: column;
   height: 800px;
-
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   background-size: cover;
-
-  background-repeat: no-repeat;
 }
 
 .navbar {
@@ -126,8 +126,10 @@ ul {
 }
 
 .btn-1 {
-  border-radius: 10px;
-  border: 1px solid rgb(182, 180, 180);
+  border-radius: 20px;
+  border: 1px solid rgb(247, 246, 246);
+  background-color: #f9f9ff;
+  height: 40px;
 }
 .bottom {
   margin-bottom: 200px;
@@ -187,7 +189,7 @@ ul {
 }
 
 .post-right {
-  width: 400px;
+  width: 60%;
 
   border: 1px solid rgb(223, 220, 220);
   border-radius: 4px;
@@ -207,18 +209,14 @@ ul {
   margin-top: -100px;
   z-index: 0;
   background-color: white;
-  width: 90%;
+  width: 80%;
 }
 .img-1 {
   width: 50px;
   height: 50px;
+  margin-top: -85px;
 }
-.popular {
-  width: 400px;
-  border: solid rgb(221, 221, 221) 1px;
-  box-sizing: border-box;
-  max-width: 100%;
-}
+
 .fa-square {
   width: 20px;
   height: 20px;
@@ -234,13 +232,18 @@ ul {
 .popular p {
   font-size: 12px;
 }
-.popular h6 {
+.newlist h6 {
   font-size: 13px;
 }
 .charlie {
-  max-width: 100%;
-  width: 400px;
-  box-sizing: border-box;
+  width: 60%;
+  color: #919191;
+}
+
+.border-charlie {
+  width: 60%;
+
+  border: none;
 }
 .f,
 .t,
@@ -256,47 +259,167 @@ ul {
 
   color: #8050fa;
 }
-.popular img:hover {
+.newlist img:hover {
   cursor: pointer;
 }
 .marvel:hover {
   cursor: pointer;
 }
+.marvel-p {
+  margin-left: -50px;
+}
 .col {
   height: 100%;
 }
 .categories {
-  width: 400px;
+  width: 60%;
   border: 1px solid rgb(218, 218, 218);
   padding: 10px;
   max-width: 100%;
   flex-wrap: wrap;
 }
+.newlist {
+  width: 60%;
+  border: 1px solid rgb(218, 218, 218);
+  padding: 10px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
 hr {
-  width: 100px;
+  width: 400px;
   flex-direction: column;
   display: flex;
   margin: 0;
   padding-right: 20px;
 }
-.name {
-  width: 33%;
-
-  gap: 17px;
-}
-.name p {
-  margin: 0;
-}
 
 .colort {
   background-color: #8050fa;
 }
-.hiden {
+.hidenn {
   display: none;
 }
-@media screen and (max-width: 1300px) {
+.footer {
+  justify-content: space-around;
+  padding: 50;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  height: 600px;
+  padding-top: 70px;
+}
+.about,
+.New,
+.instagram,
+.follow {
+  padding-top: 100px;
+  width: 20%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  max-width: 100%;
+}
+.f-finish {
+  display: flex;
+  flex-wrap: wrap;
+}
+.finish {
+  width: 100%;
+  height: 50px;
+}
+.colorlib {
+  color: #8050fa;
+}
+
+.follow {
+  width: 200px;
+}
+.photo {
+  gap: 10px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.instagram img {
+  width: 22%;
+  display: flex;
+}
+
+.text a {
+  color: white;
+  text-decoration: none;
+}
+.btn-drop {
+  color: white;
+}
+.btn-drop:focus {
+  color: #8050fa;
+}
+.btn-drop:active .arrow {
+  transform: rotate(180deg);
+}
+
+.drop:invalid {
+  color: white;
+}
+.btnn {
+  visibility: hidden;
+}
+.hidenn {
+  display: flex;
+}
+
+.hiden1 {
+  visibility: hidden;
+  position: absolute;
+}
+.input {
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 20px;
+  padding: 10px;
+  width: 80%;
+}
+.btn-2 {
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 20px;
+  padding: 10px;
+  width: 80%;
+  background-color: #8050fa;
+  color: white;
+}
+.input:focus {
+  outline: rgb(175, 175, 175);
+}
+.btn-2:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #8050fa;
+}
+.f-input {
+  background-color: black;
+  border: none;
+  width: 85%;
+}
+.arrow-in {
+  width: 15%;
+  background-color: #8050fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name p {
+  margin-right: 20px;
+  width: 100px;
+}
+@media screen and (max-width: 1345px) {
   .left {
     width: 95%;
+    align-items: center;
+    display: flex;
   }
   .right {
     display: flex;
@@ -305,6 +428,17 @@ hr {
   }
   .card {
     width: 97%;
+  }
+  .charlie {
+    width: 97%;
+    border: none;
+  }
+  .img-charlie {
+    width: 50%;
+  }
+
+  .bk-image {
+    background-position: center;
   }
   .post-right {
     width: 97%;
@@ -320,12 +454,6 @@ hr {
   .post-right {
     max-width: 100%;
   }
-  .hiden {
-    display: flex;
-  }
-  .hiden1 {
-    display: none;
-  }
 
   .container-fluid {
     display: flex;
@@ -338,12 +466,7 @@ hr {
     width: 100%;
     justify-content: center;
   }
-  .popular {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 97%;
-  }
+
   .categories {
     width: 97%;
     margin-bottom: 20px;
@@ -359,5 +482,19 @@ hr {
   }
   .bottom {
     margin-bottom: 100px;
+  }
+  .newlist {
+    width: 97%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hidenn {
+    display: none;
+  }
+  .btnn {
+    visibility: visible;
+    display: flex;
+    justify-content: start;
+    align-items: start;
   }
 }
