@@ -506,6 +506,9 @@ hr {
   .newlist {
     width: 97%;
   }
+  .footer {
+    gap: 50px;
+   }
 }
 @media screen and (max-width: 991px) {
   .hidenn {
@@ -530,6 +533,9 @@ hr {
     margin: 0px;
     z-index: 5;
   }
+  .footer {
+    gap: 50px;
+   }
 }
 @media screen and (max-width: 457px) {
   .min {
@@ -538,7 +544,19 @@ hr {
      .min1 {
        width: 22%;
      }
+     .footer {
+      gap: 50px;
+     }
      .min p {
        font-size: 6px;
      }
+     .copyright {
+      background-color: #222222;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+     
+    
+      width: 100%;
 }
