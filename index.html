@@ -1,479 +1,536 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
-  <title>Document</title>
-</head>
-<body>
- <div class="bk-image  ">
-   <div class="hidenn w-100 ">
-  <nav class="navbar navbar-expand-lg   w-100 p-0 position-fixed ">
-    <div class="container-fluid d-flex justify-content-around w-100  ">
-     <div> <img src="https://preview.colorlib.com/theme/ruft/img/logo.png" alt=""></div>
-      <div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-0 p-0 align-items-center w-100 ">
-          <li class="nav-item ">
-            <a class="nav-link active text-light" aria-current="page" href="#">HOME</a>
-          </li>
-          <li class="nav-item align-ite align-items-center justify-content-center ">
-            <a class="nav-link text-light" href="#">CATEGORY</a>
-            <a class="nav-link text-light" href="#">ARCHIVE</a>
-          </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                PAGES
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item text-dark" href="#">ELEMENTS</a></li>
-                
-              </ul>
-              
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                BLOG
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item text-dark" href="#">Blogs Detail</a></li>
-                
-              </ul>
-              
-            </li>
-            <li class="nav-item align-ite align-items-center justify-content-center ">
-              <a class="nav-link text-light" href="#">CONTACT</a>
-              
-            </li>
-          </li>
-         
-        </ul>
-       
-      </div>
-     </div>
-    </div>
-   </nav>
-  </div>
+.bk-image {
+  background-image: linear-gradient(
+      100deg,
+      rgba(128, 80, 250, 0.801),
+      rgba(128, 80, 250, 0.801)
+    ),
+    url("https://www.surfertoday.com/images/stories/surfinglevel.jpg");
 
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  background-size: cover;
+}
 
+.navbar {
+  position: fixed;
+  z-index: 8;
+}
 
-  <div class="d-flex  btnn w-100  "> <a class="btn w-100 justify-content-between d-flex" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-    
-  <div> <img src="https://preview.colorlib.com/theme/ruft/img/logo.png" alt=""></div>
-   <div class="d-flex align-items-center"> <i class="fa-solid fa-bars  text-light "></i></div>
-    </a> </div>
-  <h1 class="f-h1  m-0 p-0   ">Charter Yacht<br>The Luxury OfTraveling</h1>
+.f-h1 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 70px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
 
-  
-  
-  <div class="offcanvas offcanvas-start bg-dark " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header bg-dark ">
-      <div class="d-flex flex-column align-items-start text-black-50 text gap-2 w-100">
-      <a href="">HOME</a>
-      
-      <a href="">CATEGORY</a>
-      <a href="">ARCHIVE</a>
-      <p class="d-flex flex-column p-0 gap-0 mb-0 w-100 ">
-        <button class=" bg-dark p-0 drop justify-content-between d-flex btn-drop border-0"  data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">PAGE<i class="fa-solid fa-circle-arrow-down arrow "></i></button>
-       
-        
-      </p>
-      <div class="d-flex flex-column">
-        <div class=" w-100">
-          <div class="collapse multi-collapse " id="multiCollapseExample1">
-            <div class="card card-body bg-dark text-light  w-100 border-0">
-             <a href="">ELEMENTS</a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      <p class="mb-0 w-100 ">
-       
-        <button  class=" p-0 bg-dark  border-0  d-flex gap-0 mb-0 pb-0 d-flex justify-content-between w-100 btn-drop" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">BLOG<i class="fa-solid fa-circle-arrow-down arrow"></i></button>
-        
-      </p>
-      <div class="row">
-       
-        <div class=" ">
-          <div class="collapse multi-collapse" id="multiCollapseExample2">
-            <div class="card card-body bg-dark text-light w-100 border-0">
-             <a class="w-100 tex-light " href="">Blog Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-     
-      
-      <div class="offcanvas-body p-0">
-        <a href="">CONTACT</a>
-      </div>
-    </div>
+.post-right {
+  border: 1px solid rgb(240, 239, 239);
+  height: 115px;
 
+  margin: 0;
+  padding: 0;
+  height: 150px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 287px;
+}
 
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  height: 100%;
+  gap: 20px;
+}
 
-  
-    </div>
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
 
-  
-  
-  </div>
-      
-</div>
- <div class="d-flex justify-content-center align-items-center ">
- <div class="d-flex  coment p-5 align-items-center justify-content-center bor rounded-3">
-  
-   
-    <img class="img-1 d-flex pe-2  "  src="https://preview.colorlib.com/theme/ruft/img/author/a1.png" alt="">
-     
-    <div class="d-flex flex-column ">
-      <div> <h6 class="">MARVEL MAISON</h6></div>
-      <div class="date d-flex w-120 gap-5 fle flex-wrap bar">
-       
-    <input type="date" name="" placeholder="date" id="">
-    <span class="d-flex justify-content-start align-items-center gap-2 m-0 m-0"><i class="fa-solid fa-image d-flex  align-items-center " style="color: #6f7071; width: 10px; height: 10px;"></i>IMAGE POST </span>
-    <span class="d-flex justify-content-start align-items-center gap-2"><i class="fa-solid fa-glass-water" style="color: #6f7071;width: 10px; height: 10px;"></i><p class="m-0">FOOD TRAVEL</p> </span>
-    <span class="d-flex justify-content-start align-items-center gap-2"><i class="fa-regular fa-comment " style="color: #6f7071;width: 10px; height: 10px;"></i><p class="m-0">03 COMENTS</p> </span>
-    
-   </div>
-   <p class=" marvel-p"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, in. Repellendus doloribus alias, harum id magni cum iure, ipsum assumenda sint, consequuntur natus ratione est inventore amet magnam dicta et.</p>
-  </div>
-  </div>
-  </div>
-<div class=" main d-flex flex-wrap   ">
-  <div class="left  "> 
-    <div class="card bottom border-0 pos-1" style="max-width: 38rem;">
-    <div class="hid">  <img src="https://preview.colorlib.com/theme/ruft/img/posts/p1.jpg" class="card-img-top" alt="..."></div> 
-        <div class="card-body p-0">
-          <h5 class="card-title">It's Hurricane Season But We Are Visiting Hilton Island</h5>
-          <p class="card-text">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip..</p>
-          <button class="btn-1 text-black">CANTINIU READING</button>
-        </div>
-       
-        <div class="d-flex marvel w-100 img m-0 mt-2 ">
-           
-            <img class="img " src="https://preview.colorlib.com/theme/ruft/img/author/a1.png" alt="">
-            <div class="w-100">
-          <div class="d-flex  m-0 justify-content-start  "><h6>MARVEL MAISON</h6></div>
-        <ul class="d-flex p-0 w-100  align-items-center ">
-            <li class="d-flex min1"><input  type="date"  name="" id=""></li>
-            <li class="d-flex min"><i class="fa-brands fa-facebook-f mx-width-100 " style="color: #7a7a7a;"></i><p class=""> IMAGE POST</p></li>
-            <li class="min"><i class="fa-solid fa-glass-water mx-width-100" style="color: #747576;"></i><p> FOOD & TRAVEL</p></li>
-            <li class="min"><i class="fa-solid fa-comment mx-width-100" style="color: #787878;"></i><p>  03 COMMENTS</p></li>
-        </ul>
-       </div>
-        
-      </div>
-       
-       
-   
-    </div>
-    
-    <div class="card bottom  border-0 pos-2" style="max-width: 38rem;">
-       <div class="hid"> <img src="https://preview.colorlib.com/theme/ruft/img/posts/p2.jpg" class="card-img-top" alt="..."></div> 
-        <div class="card-body p-0">
-          <h5 class="card-title">Global Resorts Network Grn Putting Timeshares To Shame</h5>
-          <p class="card-text">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip..</p>
-          <button class="btn-1 text-black">CANTINIU READING</button>
-        </div>
-       
-        <div class="d-flex marvel w-100 img m-0 mt-2 ">
-           
-          <img class="img " src="https://preview.colorlib.com/theme/ruft/img/author/a1.png" alt="">
-          <div class="w-100">
-        <div class="d-flex  m-0 justify-content-start  "><h6>MARVEL MAISON</h6></div>
-      <ul class="d-flex p-0 w-100  align-items-center ">
-          <li class="d-flex min1"><input  type="date"  name="" id=""></li>
-          <li class="d-flex min"><i class="fa-brands fa-facebook-f mx-width-100 " style="color: #7a7a7a;"></i><p class=""> IMAGE POST</p></li>
-          <li class="min"><i class="fa-solid fa-glass-water mx-width-100" style="color: #747576;"></i><p> FOOD & TRAVEL</p></li>
-          <li class="min"><i class="fa-solid fa-comment mx-width-100" style="color: #787878;"></i><p>  03 COMMENTS</p></li>
-      </ul>
-     </div>
-      
-    </div>
-       
-       
-   
-    </div>
-    
-    <div class="card bottom  border-0 pos-3" style="max-width: 38rem;">
-       <div class="hid"> <img src="https://preview.colorlib.com/theme/ruft/img/posts/p3.jpg" class="card-img-top" alt="..."></div>
-        <div class="card-body p-0">
-          <h5 class="card-title">It's Hurricane Season But We Are Visiting Hilton Island</h5>
-          <p class="card-text">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip..</p>
-          <button class="btn-1 text-black">CANTINIU READING</button>
-        </div>
-       
-        <div class="d-flex marvel w-100 img m-0 mt-2 ">
-           
-          <img class="img " src="https://preview.colorlib.com/theme/ruft/img/author/a1.png" alt="">
-          <div class="w-100">
-        <div class="d-flex  m-0 justify-content-start  "><h6>MARVEL MAISON</h6></div>
-      <ul class="d-flex p-0 w-100  align-items-center ">
-          <li class="d-flex min1"><input  type="date"  name="" id=""></li>
-          <li class="d-flex min"><i class="fa-brands fa-facebook-f mx-width-100 " style="color: #7a7a7a;"></i><p class=""> IMAGE POST</p></li>
-          <li class="min"><i class="fa-solid fa-glass-water mx-width-100" style="color: #747576;"></i><p> FOOD & TRAVEL</p></li>
-          <li class="min"><i class="fa-solid fa-comment mx-width-100" style="color: #787878;"></i><p>  03 COMMENTS</p></li>
-      </ul>
-     </div>
-      
-    </div>
-       
-   
-    </div>
+.right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left {
+  width: 49%;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: end;
+}
+.nav {
+  z-index: 5;
+}
 
-    <div class="card bottom  border-0 pos-4" style="max-width: 38rem;">
-      <div class="hid">  <img src="https://preview.colorlib.com/theme/ruft/img/posts/p4.jpg" class="card-img-top" alt="..."></div>
-        <div class="card-body p-0">
-          <h5 class="card-title">It's Hurricane Season But We Are Visiting Hilton Island</h5>
-          <p class="card-text">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip..</p>
-          <button class="btn-1 text-black">CANTINIU READING</button>
-        </div>
-       
-        <div class="d-flex marvel w-100 img m-0 mt-2 ">
-           
-          <img class="img " src="https://preview.colorlib.com/theme/ruft/img/author/a1.png" alt="">
-          <div class="w-100">
-        <div class="d-flex  m-0 justify-content-start  "><h6>MARVEL MAISON</h6></div>
-      <ul class="d-flex p-0 w-100  align-items-center ">
-          <li class="d-flex min1"><input  type="date"  name="" id=""></li>
-          <li class="d-flex min"><i class="fa-brands fa-facebook-f mx-width-100 " style="color: #7a7a7a;"></i><p class=""> IMAGE POST</p></li>
-          <li class="min"><i class="fa-solid fa-glass-water mx-width-100" style="color: #747576;"></i><p> FOOD & TRAVEL</p></li>
-          <li class="min"><i class="fa-solid fa-comment mx-width-100" style="color: #787878;"></i><p>  03 COMMENTS</p></li>
-      </ul>
-     </div>
-      
-    </div>
-       
-       
-   
-    </div>
+.container-fluid {
+  padding: 0;
+  background-color: #8050faf1;
 
+  z-index: 10;
+}
+.marvel p {
+  font-size: 10px;
+}
+.img {
+  width: 50px;
+  height: 50px;
+}
+ul li {
+  display: flex;
+  gap: 5px;
+}
+ul p {
+  margin: 0;
+  padding: 0;
+}
+.marvel {
+  background-color: white;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin-top: -235px;
+  height: 70px;
+  margin-left: -50px;
+  z-index: 0;
+  border-radius: 5px;
+}
+.marvel input {
+  border: none;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.im-1 {
+  background-image: url(https://preview.colorlib.com/theme/ruft/img/posts/p1.jpg);
+  background-size: cover;
+  max-width: 100%;
+  height: 300px;
+}
 
-    <div class="card bottom  border-0 pos-5" style="max-width: 38rem;">
-      <div class="hid">  <img src="https://preview.colorlib.com/theme/ruft/img/posts/p5.jpg" class="card-img-top" alt="..."> </div>
-        <div class="card-body p-0">
-          <h5 class="card-title">It's Hurricane Season But We Are Visiting Hilton Island</h5>
-          <p class="card-text">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip..</p>
-          <button class="btn-1 text-black">CANTINIU READING</button>
-        </div>
-       
-        <div class="d-flex marvel w-100 img m-0 mt-2 ">
-           
-          <img class="img " src="https://preview.colorlib.com/theme/ruft/img/author/a1.png" alt="">
-          <div class="w-100">
-        <div class="d-flex  m-0 justify-content-start  "><h6>MARVEL MAISON</h6></div>
-      <ul class="d-flex p-0 w-100  align-items-center ">
-          <li class="d-flex min1"><input  type="date"  name="" id=""></li>
-          <li class="d-flex min"><i class="fa-brands fa-facebook-f mx-width-100 " style="color: #7a7a7a;"></i><p class=""> IMAGE POST</p></li>
-          <li class="min"><i class="fa-solid fa-glass-water mx-width-100" style="color: #747576;"></i><p> FOOD & TRAVEL</p></li>
-          <li class="min"><i class="fa-solid fa-comment mx-width-100" style="color: #787878;"></i><p>  03 COMMENTS</p></li>
-      </ul>
-     </div>
-      
-    </div>
-       
-       
-   
-     </div>
-     <div class="d-flex w-100 justify-content-center">
-     <nav class="hiden" aria-label=" navigation example d-flex w-100 align-items-center  ">
-      <ul class="pagination hiden">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-   </div>
-  </div>  
-    
-   
+.btn-1 {
+  border-radius: 20px;
+  border: 1px solid rgb(247, 246, 246);
+  background-color: #f9f9ff;
+  height: 40px;
+}
+.bottom {
+  margin-bottom: 200px;
+}
+
+.pos-1:hover h5,
+.pos-2:hover h5,
+.pos-3:hover h5,
+.pos-4:hover h5,
+.pos-5:hover h5 {
+  color: #8050fa;
+  transition: all 0.3 linear;
+  cursor: pointer;
+}
+.pos-1:hover .card-img-top,
+.pos-2:hover .card-img-top,
+.pos-3:hover .card-img-top,
+.pos-4:hover .card-img-top,
+.pos-5:hover .card-img-top {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.3s linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+  cursor: pointer;
+}
+.hid {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {
+  overflow: auto;
+}
+.bt-size {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 250px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding-left: 5px;
+  padding-right: 1px;
+  background-color: rgba(240, 240, 240, 0.767);
+}
+.fa {
+  color: white;
+  align-items: center;
+}
+.col {
+  background-color: #8050fa;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.post-right {
+  width: 60%;
+
+  border: 1px solid rgb(223, 220, 220);
+  border-radius: 4px;
+}
+.pos-2:hover button,
+.pos-3:hover button,
+.pos-4:hover button,
+.pos-5:hover button,
+.pos-1:hover button {
+  color: white;
+  background-color: #8050fa;
+  transition: all color 0.3 ease;
+  cursor: pointer;
+}
+
+.coment {
+  margin-top: -100px;
+  z-index: 0;
+  background-color: white;
+  width: 80%;
+}
+.img-1 {
+  width: 50px;
+  height: 50px;
+  margin-top: -85px;
+}
+
+.fa-square {
+  width: 20px;
+  height: 20px;
+  background-color: #8050fa;
+}
+.pp-1:hover h6,
+.pp-2:hover h6,
+.pp-3:hover h6,
+.pp-4:hover h6 {
+  color: #8050fa;
+  cursor: pointer;
+}
+.popular p {
+  font-size: 12px;
+}
+.newlist h6 {
+  font-size: 13px;
+}
+.charlie {
+  width: 60%;
+  color: #919191;
+}
+
+.border-charlie {
+  width: 60%;
+
+  border: none;
+}
+.f,
+.t,
+.bas,
+.beh {
+  color: #aaa9a9;
+}
+.f:hover,
+.t:hover,
+.bas:hover,
+.beh:hover {
+  cursor: pointer;
+
+  color: #8050fa;
+}
+.newlist img:hover {
+  cursor: pointer;
+}
+.marvel:hover {
+  cursor: pointer;
+}
+.marvel-p {
+  margin-left: -50px;
+}
+.col {
+  height: 100%;
+}
+.categories {
+  width: 60%;
+  border: 1px solid rgb(218, 218, 218);
+  padding: 10px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.newlist {
+  width: 60%;
+  border: 1px solid rgb(218, 218, 218);
+  padding: 10px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+hr {
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.colort {
+  background-color: #8050fa;
+}
+.hidenn {
+  display: none;
+}
+.footer {
+  background-color: rgb(34, 34, 34);
+  display: flex;
+
+  width: 100%;
+}
+.about,
+.New,
+.instagram {
+  width: 20%;
+}
+.follow {
+  width: 10%;
+}
+
+.f-finish {
+  display: flex;
+}
+.finish {
+  width: 100%;
+  height: 50px;
+}
+.colorlib {
+  color: #8050fa;
+}
+
+.photo {
+  gap: 10px;
+  flex-wrap: wrap;
+
+  display: flex;
+}
+.instagram {
+  width: 240px;
+}
+.instagram img {
+  width: 20%;
+  height: 20%;
+  display: flex;
+}
+.bar {
+  max-width: 100%;
+}
+
+.text a {
+  color: white;
+  text-decoration: none;
+}
+.btn-drop {
+  color: white;
+}
+.btn-drop:focus {
+  color: #8050fa;
+}
+.btn-drop:active .arrow {
+  transform: rotate(180deg);
+}
+
+.drop:invalid {
+  color: white;
+}
+.btnn {
+  visibility: hidden;
+}
+.hidenn {
+  display: flex;
+}
+
+.hiden1 {
+  visibility: hidden;
+  position: absolute;
+}
+.input {
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 20px;
+  padding: 10px;
+  width: 80%;
+}
+.btn-2 {
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 20px;
+  padding: 10px;
+  width: 80%;
+  background-color: #8050fa;
+  color: white;
+}
+.input:focus {
+  outline: rgb(175, 175, 175);
+}
+.btn-2:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #8050fa;
+}
+.f-input {
+  background-color: black;
+  border: none;
+  width: 85%;
+}
+.arrow-in {
+  width: 15%;
+  background-color: #8050fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name p {
+  margin-right: 20px;
+  width: 100px;
+}
+.copyright {
+  background-color: #222222;
+  padding-bottom: 20px ; !important 
   
-  <div class="right gap-4 ">
-  
-    <div class="post-right d-flex p-5 ">
-        <button class="bt-size d-flex  align-items-center justify-content-between">SEARCH POST <div class="d-flex justify-content-center align-items-center color h-100"><i class="fa fa-search d-flex  d-flex  col"></i></div></button>
-      
-        </div>
-        
-        <div class="card charlie p-5 " >
-            <img  src="https://preview.colorlib.com/theme/ruft/img/blog/user2.png" class="img-charlie" alt="...">
-            <div class="card-body">
-                <h6>Charlie ALison Barber</h6>
-              <p class="card-text">SENIOR BLOG WRITER</p>
-              <p class="w-100 ">Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp whenyou can get. Boot camps have itssuppor ters andits detractors.</p>
-              <div class=" d-flex gap-4">
-                <i class="fa-brands fa-facebook-f f" ></i>
-                <i class="fa-brands fa-twitter t" ></i>
-                <i class="fa-solid fa-basketball bas" ></i>
-                <i class="fa-brands fa-behance beh" ></i>
-              </div>
-            </div>
-          </div>
-          
-          <div class="newlist d-flex flex-column p-4 gap-4 ">
-           <div class="d-flex "> <i class="fa-solid fa-square" style="color: #8050fa; "></i>
-            <h5 class="m-0 ms-3">Popular Posts</h5></div>
-            <div class="d-flex flex-column justify-content-start">
-           <div class="pp-1 d-flex gap-5 w-100 justify-content-start">
-            <div class="left-m ">
-              <img src="https://preview.colorlib.com/theme/ruft/img/blog/r1.jpg" alt="">
-            </div>
-            <div class="right-p">
-              <h6>
-                Space Final Frontier</h6>
-                <p>02 HOURS AGO</p>
-            </div>
-           </div>
-            <div class="pp-2 d-flex gap-5 justify-content-start">
-              <div class="left-m">
-                <img src="https://preview.colorlib.com/theme/ruft/img/blog/r2.jpg" alt="">
-              </div>
-              <div class="right-p">
-                <h6>The Amazing Hubble</h6>
-                <p>02 HOURS AGO</p>
-              </div>
-            </div>
-            <div class="pp-3 d-flex gap-5 justify-content-start">
-              <div class="left-m">
-                <img src="https://preview.colorlib.com/theme/ruft/img/blog/r3.jpg" alt="">
-              </div>
-              <div class="right-p">
-                <h6>Astronomy Astrology</h6>
-                <p>02 HOURS AGO</p>
-              </div>
-            </div>
-            <div class="pp-4 d-flex gap-5 justify-content-start">
-              <div class="left-m">
-                <img src="https://preview.colorlib.com/theme/ruft/img/blog/r4.jpg" alt="">
-              </div>
-              <div class="right-p">
-                <h6>Astronomy Astrology</h6>
-                <p>02 HOURS AGO</p>
-              </div>
-            </div>
-           </div>
-          </div>
-          
-              
-          <div class="newlist d-flex ">
-         
-              <div class="hrr w-100 d-flex  flex-column">
-                <div class="d-flex align-items-center mb-3"> <i class="fa-solid fa-square" style="color: #8050fa; "></i>
-                  <h5 class="m-0 ms-3">Popular Posts</h5></div>
-              <div class="d-flex gap-2"> <div class=" name "><p class="">Technology</p></div> <hr class=""> <p>37</p></div> 
-              <div class="d-flex gap-2">  <div class=" name"><p class="">Lifestyle</p></div><hr class=""> <p>37</p></div> 
-              <div class="d-flex gap-2"><div class=" name" ><p>Fashion</p></div> <hr class=""> <p>37</p></div> 
-              <div class="d-flex gap-2"><div class=" name"><p>art</p> </div><hr class=""> <p>37</p></div> 
-              <div class="d-flex gap-2"><div class=" name"> <p>Food</p></div> <hr class=""> <p>37</p></div> 
-              <div class="d-flex gap-2"><div class=" name"><p>Architecture</p></div> <hr class=""> <p>37</p></div> 
-              <div class="d-flex gap-2"><div class=" name"><p>Adventure</p></div> <hr class=""> <p>37</p></div> 
-              </div>
-            
-     
-          </div> 
-          <div class="newlist">
-            <div class="d-flex align-items-center mb-3"> <i class="fa-solid fa-square" style="color: #8050fa; "></i>
-              <h5 class="m-0 ms-3">NEWS LETTER</h5></div>
-              <div class="d-flex flex-column gap-4  align-items-center w-100">
-              <input class=" input "  placeholder="Email Address" type="text">
-              <button class=" btn-2 gap-2 d-flex m-0 align-items-center">SUBSCRIBE NOW<i class="fa-solid fa-arrow-right d-flex "></i></button>
-              </div>
-          </div>
- 
- 
- </div>
- 
- 
- 
-</div>
-<div class="w-100 d-flex justify-content-center ">
-<nav class="hiden1 d-flex" aria-label="Page navigation example ">
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-   </ul>
-  </nav>
- </div>
- <div class="footer row   row-cols-lg-4 row-cols-xxl-4 row-cols-md-2  row-cols-md-1 p-5  ">
-   
-  <div class="about text-light d-flex flex-column  d-flex ">
-    <h6>About Us</h6>
-    <p class=" ">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do<br> eiusmod tempor incididunt ut labore <br>dolore magna aliqua.</p>
-  </div>
-  <div class="New text-light flex-column  ">
-    <h6>Newsletter</h6>
-    <p>Stay updated with our latest trends</p>
-   <div class="d-flex"> <input  class="text-light p-2 f-input"  placeholder="EMAIL ADDRESS" type="text" > <i class="fa-solid fa-arrow-right d-flex arrow-in "></i></div>
-    
-    
-  </div>
-  <div class="instagram text-light   ">
-    <div><h6 class="">INSTAGRAM</h6></div>
-    <div class="photo">
-      <img src="https://preview.colorlib.com/theme/ruft/img/i1.jpg" alt="">
-      <img src="https://preview.colorlib.com/theme/ruft/img/i2.jpg" alt="">
-      <img src="https://preview.colorlib.com/theme/ruft/img/i3.jpg" alt="">
-      <img src="https://preview.colorlib.com/theme/ruft/img/i4.jpg" alt="">
-      <img src="https://preview.colorlib.com/theme/ruft/img/i5.jpg" alt="">
-      <img src="https://preview.colorlib.com/theme/ruft/img/i6.jpg" alt="">
-      <img src="https://preview.colorlib.com/theme/ruft/img/i7.jpg" alt="">
-      <img src="https://preview.colorlib.com/theme/ruft/img/i8.jpg" alt="">
-    </div>
-  </div>
-  
-  <div class="follow  flex-column ">
-    <h6 class="text-light ">
-      Follow Us
-    </h6>
-      <p class="text-light">Let us be social</p>
-    
-    
-    <div class=" d-flex gap-3  " >
-      <i class="fa-brands fa-facebook-f f" ></i>
-      <i class="fa-brands fa-twitter t" ></i>
-      <i class="fa-solid fa-basketball bas" ></i>
-      <i class="fa-brands fa-behance beh" ></i>
-  </div>
-  
-  </div>
-  
- </div>
- <div class="copyright p-3">
-  <div class="d-flex  f-finish " >
-    <p class="text-light  finish d-flex align-items-center justify-content-center flex-wrap">COPYRIGHT<i class="fa-regular fa-copyright"></i>2023 All rights reserved | This template is made with<i class="fa-solid fa-heart" style="color: #8050fa;"></i> by <span style="color: #8050fa;">Colorlib</span></p>
-    </div>
- </div>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
-integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
-integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
-</html>
+}
+
+@media screen and (max-width: 1345px) {
+  .left {
+    width: 95%;
+    align-items: center;
+    display: flex;
+  }
+  .min {
+    width: 19%;
+     }
+     .min1 {
+       width: 27%;
+     }
+     .min p {
+       font-size: 8px;
+     }
+  .right {
+    display: flex;
+    width: 95%;
+    border: none;
+  }
+  .card {
+    width: 97%;
+  }
+  .charlie {
+    width: 97%;
+    border: none;
+  }
+  .img-charlie {
+    width: 50%;
+  }
+
+  .bk-image {
+    background-position: center;
+  }
+  .post-right {
+    width: 97%;
+    padding: 48px;
+    box-sizing: border-box;
+  }
+  .marvel {
+    margin-top: 0;
+    margin-left: 0;
+    margin-top: 25px;
+    width: 100%;
+  }
+  .post-right {
+    max-width: 100%;
+  }
+
+  .container-fluid {
+    display: flex;
+  }
+  .responsive {
+    display: flex;
+  }
+
+  .main {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .categories {
+    width: 97%;
+    margin-bottom: 20px;
+  }
+  .pp-1,
+  .pp-2,
+  .pp-3,
+  .pp-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom {
+    margin-bottom: 100px;
+  }
+  .newlist {
+    width: 97%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hidenn {
+    display: none;
+  }
+  .min {
+ width: 18%;
+  }
+  .min1 {
+    width: 27%;
+  }
+  .min p {
+    font-size: 8px;
+  }
+  .btnn {
+    visibility: visible;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: #8050fae8;
+    position: fixed;
+    margin: 0px;
+    z-index: 5;
+  }
+}
+@media screen and (max-width: 457px) {
+  .min {
+    width: 20%;
+     }
+     .min1 {
+       width: 22%;
+     }
+     .min p {
+       font-size: 6px;
+     }
+}
