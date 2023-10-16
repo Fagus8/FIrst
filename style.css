@@ -79,12 +79,9 @@ ul {
 
 .container-fluid {
   padding: 0;
-  background-color: #8050fa;
-
-  z-index: 7;
+  background-color: #8050faf1;
 
   z-index: 10;
-  opacity: 0.8;
 }
 .marvel p {
   font-size: 10px;
@@ -141,7 +138,7 @@ ul {
 .pos-4:hover h5,
 .pos-5:hover h5 {
   color: #8050fa;
-  transition: all 0.3 ease;
+  transition: all 0.3 linear;
   cursor: pointer;
 }
 .pos-1:hover .card-img-top,
@@ -151,7 +148,10 @@ ul {
 .pos-5:hover .card-img-top {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  transition: transform 0.3s ease;
+  transition: all 0.3s linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
   cursor: pointer;
 }
 .hid {
@@ -302,28 +302,22 @@ hr {
   display: none;
 }
 .footer {
-  justify-content: space-around;
-  padding: 50;
   background-color: rgb(34, 34, 34);
   display: flex;
-  height: 600px;
-  padding-top: 70px;
+
+  width: 100%;
 }
 .about,
 .New,
-.instagram,
-.follow {
-  padding-top: 100px;
+.instagram {
   width: 20%;
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  height: 80%;
-  max-width: 100%;
 }
+.follow {
+  width: 10%;
+}
+
 .f-finish {
   display: flex;
-  flex-wrap: wrap;
 }
 .finish {
   width: 100%;
@@ -333,19 +327,22 @@ hr {
   color: #8050fa;
 }
 
-.follow {
-  width: 200px;
-}
 .photo {
   gap: 10px;
   flex-wrap: wrap;
-  box-sizing: border-box;
+
   display: flex;
 }
-
+.instagram {
+  width: 240px;
+}
 .instagram img {
-  width: 22%;
+  width: 20%;
+  height: 20%;
   display: flex;
+}
+.bar {
+  max-width: 100%;
 }
 
 .text a {
@@ -414,6 +411,9 @@ hr {
 .name p {
   margin-right: 20px;
   width: 100px;
+}
+.copyright {
+  background-color: #222222;
 }
 @media screen and (max-width: 1345px) {
   .left {
@@ -491,10 +491,15 @@ hr {
   .hidenn {
     display: none;
   }
+
   .btnn {
     visibility: visible;
     display: flex;
     justify-content: start;
     align-items: start;
+    background-color: #8050fae8;
+    position: fixed;
+    margin: 0px;
+    z-index: 5;
   }
 }
