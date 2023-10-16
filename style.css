@@ -415,12 +415,22 @@ hr {
 .copyright {
   background-color: #222222;
 }
+
 @media screen and (max-width: 1345px) {
   .left {
     width: 95%;
     align-items: center;
     display: flex;
   }
+  .min {
+    width: 19%;
+     }
+     .min1 {
+       width: 27%;
+     }
+     .min p {
+       font-size: 8px;
+     }
   .right {
     display: flex;
     width: 95%;
@@ -491,7 +501,15 @@ hr {
   .hidenn {
     display: none;
   }
-
+  .min {
+ width: 18%;
+  }
+  .min1 {
+    width: 27%;
+  }
+  .min p {
+    font-size: 8px;
+  }
   .btnn {
     visibility: visible;
     display: flex;
@@ -502,4 +520,15 @@ hr {
     margin: 0px;
     z-index: 5;
   }
+}
+@media screen and (max-width: 457px) {
+  .min {
+    width: 20%;
+     }
+     .min1 {
+       width: 22%;
+     }
+     .min p {
+       font-size: 6px;
+     }
 }
