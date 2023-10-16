@@ -414,6 +414,8 @@ hr {
 }
 .copyright {
   background-color: #222222;
+  padding-bottom: 20px ; !important
+  padding:20px;
 }
 
 @media screen and (max-width: 1345px) {
