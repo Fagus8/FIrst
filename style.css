@@ -220,6 +220,10 @@ ul {
   height: 200px;
   max-width: 100%;
 }
+.img-m {
+  margin-top: 35px;
+  margin-right: 10px;
+}
 .coment {
   padding: 20px;
   margin-top: -100px;
@@ -233,7 +237,12 @@ ul {
   margin: 0;
   max-width: 100%;
 }
-
+.coment3 {
+  width: 90%;
+  display: flex;
+  margin-left: 56px;
+  margin-top: 10px;
+}
 .min2 {
   width: 17%;
 }
@@ -465,6 +474,12 @@ hr {
   position: fixed;
   height: 50px;
 }
+.res-coment {
+  margin-top: -280px;
+  background-color: white;
+  position: relative;
+  left: -50px;
+}
 .marvel1 p {
   font-size: 16px;
 }
@@ -486,7 +501,18 @@ hr {
 .min1 {
   border: none;
 }
+.min {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
 @media screen and (max-width: 1345px) {
+  .res-coment {
+    margin-top: 0px;
+    background-color: white;
+    position: relative;
+    left: 0px;
+  }
   .left {
     width: 95%;
     align-items: center;
